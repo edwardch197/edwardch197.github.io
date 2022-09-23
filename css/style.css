@@ -1,0 +1,183 @@
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-navy: navy;
+    --color-green: green;
+    --color-red: red;
+    --color-brown: brown;
+    --color-purple: purple;
+    --color-orange: orange;
+    --color-yellow: yellow;
+    --color-lime: lime;
+    --color-teal: teal;
+    --color-cyan: #009fff;
+    --color-blue: blue;
+    --color-fuchsia: fuchsia;
+    --color-gray: gray;
+    --color-lightgray: lightgray;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: calc(16px * 21);
+    max-height: 100%;
+    min-width: calc(16px * 29);
+    font-size: 30px;
+}
+
+html * {
+    font-family: "Menlo Regular", monospace;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+body {
+    background-color: var(--color-black);
+    color: var(--color-lightgray);
+    margin: 1rem auto;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    position: relative;
+    max-width: 60rem;
+    width: calc(100% - 2rem);
+}
+body pre {
+    font-size: 1rem;
+    text-align: left;
+    overflow: hidden!important;
+}
+body > div {
+    flex: 1 1 auto;
+}
+body #info, body a {
+    font-size: 0.7rem;
+}
+body a {
+    color: var(--color-lime);
+    text-decoration: none;
+}
+body #buddy_path {
+    position: relative;
+    width: calc(100% - 2rem);
+    left: 1rem;
+    z-index: 1;
+    max-width: 100%;
+    overflow: hidden!important;
+    height: 2rem;
+    border: 2px dashed var(--color-lime);
+    border-top: none;
+}
+body #buddy_path #buddy {
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 1.6rem;
+    height: 3rem;
+    /*overflow: hidden!important;*/
+}
+body #buddy_path #buddy #bubble {
+    position: absolute;
+    top: 0;
+    font-size: 0.7rem;
+    white-space: pre;
+    height: 1rem;
+    width: fit-content;
+}
+body #buddy_path #buddy #bubble.point-left {
+    right: 2rem;
+}
+body #buddy_path #buddy #bubble.point-left:after {
+    content: "-";
+}
+body #buddy_path #buddy #bubble.point-right {
+    left: 2rem;
+}
+body #buddy_path #buddy #bubble.point-right:before {
+    content: "-";
+}
+body #buddy_path #buddy #buddy_ani {
+    width: 1.6rem;
+    height: 3rem;
+}
+body #buddy_path #buddy #buddy_ani pre {
+    margin: 0;
+}
+body.error {
+    color: var(--color-red);
+}
+body.error a {
+    color: var(--color-orange);
+}
+body.error #buddy_path {
+    border-color: var(--color-red);
+}
+
+.fg00 {
+    color: var(--color-white);
+}
+
+.fg01 {
+    color: var(--color-black);
+}
+
+.fg02 {
+    color: var(--color-navy);
+}
+
+.fg03 {
+    color: var(--color-green);
+}
+
+.fg04 {
+    color: var(--color-red);
+}
+
+.fg05 {
+    color: var(--color-brown);
+}
+
+.fg06 {
+    color: var(--color-purple);
+}
+
+.fg07 {
+    color: var(--color-orange);
+}
+
+.fg08 {
+    color: var(--color-yellow);
+}
+
+.fg09 {
+    color: var(--color-lime);
+}
+
+.fg10 {
+    color: var(--color-teal);
+}
+
+.fg11 {
+    color: var(--color-cyan);
+}
+
+.fg12 {
+    color: var(--color-blue);
+}
+
+.fg13 {
+    color: var(--color-fuchsia);
+}
+
+.fg14 {
+    color: var(--color-gray);
+}
+
+.fg15 {
+    color: var(--color-lightgray);
+}
