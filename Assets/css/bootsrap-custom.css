@@ -1,0 +1,18 @@
+.btn{
+    border-radius: 15px!important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)!important;
+}
+
+.btn-primary{
+    background-color: #187498!important;
+    color: white!important;
+}
+
+.btn-danger{
+    background: #EB5353!important;
+}
+
+.card{
+    outline: unset!important;
+    border-radius: 20px;
+}

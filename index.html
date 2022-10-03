@@ -1,30 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Edoless Page's</title>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <meta charset="utf-8" />
+    <title>Compass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/bootsrap-custom.css">
+    <link rel="stylesheet" href="Assets/css/app.css">
 
 </head>
+
 <body>
 
-<div id="info">I wish to convey a special message from someone, <a href="#" target="_blank">hehe</a> :D <3</div>
-<div id="buddy_path">
-    <div id="buddy">
-        <div id="buddy_ani"></div>
-        <div id="bubble"></div>
-    </div>
+<div class="container">
+
+    <nav class="navbar my-3 navbar-expand-lg bg-white shadow-effect">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img class="navbar-logo" src="https://aqbgvzzymp.cloudimg.io/v7/barokahabadi.co.id/wp-content/uploads/2020/11/dummy-logo-1b.png" alt="">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Competition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reedem Reward</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#" class="btn btn-primary">
+                        <i data-feather="user"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger px-5">
+                        <i data-feather="user"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="slider-section">
+        <div class="swiper sliderSwiper shadow-effect">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://pbs.twimg.com/profile_images/1372612639705108480/Y8lfnroU_400x400.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://pbs.twimg.com/profile_images/1372612639705108480/Y8lfnroU_400x400.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+
+        <div class="quiz-section">
+            <div class="card card-quiz shadow-effect">
+                <h6 class="mb-0 fw-bold">Ingin ikut lomba ? Tapi bingung lomba seperti apa ?</h6>
+                <a href="" class="btn btn-danger">Coba Klik Disini</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <h6><strong>Trending</strong> Now</h6>
+
+<!--        <div class="trending-filter">-->
+<!--            <div class="swiper-container btnSwiper">-->
+<!--                <div class="swiper-wrapper">-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <a href="#" class="btn btn-secondary">Olimpiade</a>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <a href="#" class="btn btn-secondary">Karya Tulis Ilmiah</a>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <a href="#" class="btn btn-secondary">Businness Competition</a>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <a href="#" class="btn btn-secondary">E-Sport</a>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <a href="#" class="btn btn-secondary">See All</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="swiper-pagination"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="trending-card">
+            <div class="swiper-container cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
 </div>
-<div id="rem" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
 
-
-<script src="js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<script href="Assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+<script href="Assets/js/app.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".sliderSwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper2 = new Swiper('.cardSwiper', {
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 15,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+
+    var swiper3 = new Swiper('.btnSwiper', {
+        slidesPerView: 5,
+        slidesPerColumn: 2,
+        spaceBetween: 5
+    });
+
+
+</script>
 
 </body>
 </html>
