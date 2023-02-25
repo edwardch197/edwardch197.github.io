@@ -1,161 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>Compass</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Snowwhite & Koala</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2424/2424348.png">
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/css/bootsrap-custom.css">
     <link rel="stylesheet" href="Assets/css/app.css">
+    <link rel="stylesheet" href="Assets/vendor/fontawesome/css/fontawesome.min.css">
 
-</head>
-
+    <!--    <link rel="stylesheet" href="Assets/css/framework7.bundle.min.css">-->
+<!--    <link rel="stylesheet" href="Assets/css/framework7-icons.css">-->
+<!--    <link rel="stylesheet" href="Assets/css/style.css">-->
+<!--</head>-->
 <body>
 
-<div class="container">
-
-    <nav class="navbar my-3 navbar-expand-lg bg-white shadow-effect">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <img class="navbar-logo" src="https://aqbgvzzymp.cloudimg.io/v7/barokahabadi.co.id/wp-content/uploads/2020/11/dummy-logo-1b.png" alt="">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Competition</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reedem Reward</a>
-                    </li>
-                </ul>
-                <div>
-                    <a href="#" class="btn btn-primary">
-                        <i data-feather="user"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger px-5">
-                        <i data-feather="user"></i> Login
-                    </a>
-                </div>
-            </div>
+<div id="loadingPage" v-show='show' transition="fade">
+    <div id="container">
+        <div class="a1">
+            <div class="mo-boy"></div>
+            <div class="mo-girl"></div>
+            <div class="mo-mo"></div>
+            <div class="mo-wheel2"></div>
+            <div class="mo-wheel1"></div>
         </div>
-    </nav>
-
-    <section class="slider-section">
-        <div class="swiper sliderSwiper shadow-effect">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                </div>
-            </div>
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
-        </div>
-
-        <div class="quiz-section">
-            <div class="card card-quiz shadow-effect">
-                <h6 class="mb-0 fw-bold">Ingin ikut lomba ? Tapi bingung lomba seperti apa ?</h6>
-                <a href="" class="btn btn-danger">Coba Klik Disini</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="trending-section">
-        <h6><strong>Trending</strong> Now</h6>
-
-<!--        <div class="trending-filter">-->
-<!--            <div class="swiper-container btnSwiper">-->
-<!--                <div class="swiper-wrapper">-->
-<!--                    <div class="swiper-slide">-->
-<!--                        <a href="#" class="btn btn-secondary">Olimpiade</a>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-slide">-->
-<!--                        <a href="#" class="btn btn-secondary">Karya Tulis Ilmiah</a>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-slide">-->
-<!--                        <a href="#" class="btn btn-secondary">Businness Competition</a>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-slide">-->
-<!--                        <a href="#" class="btn btn-secondary">E-Sport</a>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-slide">-->
-<!--                        <a href="#" class="btn btn-secondary">See All</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="swiper-pagination"></div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <div class="trending-card">
-            <div class="swiper-container cardSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card shadow-effect" style="background-image: url('https://www.smpnegeri4tambunselatan.sch.id/upload/imagecache/86117773WhatsAppImage2022-03-06at11.13.54PM-800x1133.jpeg')"></div>
-                    </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-
-    </section>
-
+        <div class="motor_shadow"></div>
+        <i class="smoke smoke_1"></i>
+        <i class="smoke smoke_2"></i>
+        <div class="percentage">loading&nbsp;&nbsp;<span>100%</span></div>
+    </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script href="Assets/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<div class="bg-image" style="background-image: url('Assets/img/snowwhite/1677318164814.jpg')">
+    <div class="text-bg-gradient">
+        <div class="container">
+            <div class="position-absolute top-0 end-0 p-3">
+                <span class="badge bg-light rounded-pill text-muted">Part 1</span>
+            </div>
+            <div class="page1-section-text position-absolute bottom-0 text-white mb-5 ">
+                <h1>Snowwhite & Koala</h1>
+                <p>A plan to explore the city of Malang.</p>
+                <a href="journey.html" class="btn btn-light rounded-pill">
+                    Get Started </i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src="https://unpkg.com/feather-icons"></script>
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-
-<script href="Assets/js/app.js"></script>
-
-
-<script>
-    var swiper = new Swiper(".sliderSwiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
-    var swiper2 = new Swiper('.cardSwiper', {
-        slidesPerView: 4,
-        slidesPerColumn: 1,
-        spaceBetween: 15,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        }
-    });
-
-    var swiper3 = new Swiper('.btnSwiper', {
-        slidesPerView: 5,
-        slidesPerColumn: 2,
-        spaceBetween: 5
-    });
-
-
-</script>
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/js/app.js"></script>
+<!--<script src="Assets/js/framework7.bundle.min.js"></script>-->
+<!--<script src="Assets/js/app_obfuscated.js"></script>-->
 </body>
 </html>
