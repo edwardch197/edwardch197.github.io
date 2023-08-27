@@ -39,6 +39,7 @@
       height: 100%;
       margin-left: auto;
       margin-right: auto;
+        top: 0;
       right: 0;
       left: 0;
       text-align: center;
@@ -72,7 +73,8 @@
     .content .btn-not-sure{
       position: absolute;
       transition: all 0.2s;
-        transform: translate(-105%, 130%);
+        top: 30rem;
+        left: 22.5rem;
     }
 
 
@@ -81,6 +83,7 @@
         transition: 0.1s filter;
         filter: blur(10px);
     }
+
 
   </style>
 </head>
@@ -107,15 +110,21 @@
   var btnNotSure = document.getElementById('not-sure');
   var incrementExperiment = 0;
 
-  function randPosition(){
-    var randX = Math.random() * 50;
-    var randY = Math.random() * 50;
+  const maxWidth = screen.width - btnNotSure.clientWidth;
+  const maxHeight = screen.height - btnNotSure.clientHeight;
 
-    btnNotSure.style.left = `${randX}%`;
-    btnNotSure.style.top = `${randY}%`;
+  function getRandomCoordinate(max) {
+      return Math.floor(Math.random() * max);
+  }
+
+  function randPosition(){
+    var randX = getRandomCoordinate(maxWidth);
+    var randY = getRandomCoordinate(maxHeight);
+
+    btnNotSure.style.left = `${randX}px`;
+    btnNotSure.style.top = `${randY}px`;
 
     incrementExperiment++;
-      console.log(incrementExperiment)
 
       if ([5, 10, 15].includes(incrementExperiment) || incrementExperiment >= 20){
           var title, message, gif;
