@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b1145e3-cc1f-41f5-97c4-f8ed0993668b" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/flower/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowers.html" beforeDir="false" afterPath="$PROJECT_DIR$/flower/flowers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +60,7 @@
       <recent name="C:\xampp\htdocs\random-things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\random-things\flower" />
       <recent name="C:\xampp\htdocs\random-things\explore-malang" />
       <recent name="C:\xampp\htdocs\first" />
     </key>
@@ -76,6 +79,10 @@
       <workItem from="1677411735959" duration="19000" />
       <workItem from="1693092622899" duration="3779000" />
       <workItem from="1693104356030" duration="6772000" />
+      <workItem from="1693357759710" duration="1919000" />
+      <workItem from="1693532123529" duration="6000" />
+      <workItem from="1694420325435" duration="2803000" />
+      <workItem from="1694484887504" duration="4000" />
     </task>
     <servers />
   </component>
