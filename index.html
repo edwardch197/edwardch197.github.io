@@ -1,201 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>XIXIXI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edwardch197</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <style>
-    *,
-    *::after,
-    *::before {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+    <style>
+        body {
+            background-color: #121212; 
+            color: #E0E0E0; 
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh; 
+            margin: 0;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-    :root {
-      --dark-color: #000;
-    }
+        .container {
+            padding: 20px; 
+        }
 
-    body {
-      background-color: var(--dark-color);
-      font-family: Arial,serif;
-    }
+        h1 {
+            font-size: 3em; 
+            margin-bottom: 0.2em;
+            color: #e3e3e3; 
+        }
 
-    .night {
-      position: fixed;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100%;
-      filter: blur(0.1vmin);
-      background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(255, 255, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #ffffff, #ffffff);
-    }
+        .github-link {
+            text-decoration: none; 
+            color: inherit;
+            transition: color 0.3s ease; 
+        }
 
-    .content{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-        top: 0;
-      right: 0;
-      left: 0;
-      text-align: center;
-      color: white;
-      z-index: 99;
-    }
-
-    .content h1{
-        margin-top: 20%;
-        font-size: 40pt;
-      padding-bottom: 60px;
-    }
-
-
-    .content button{
-      padding: 35px;
-      background-color: transparent;
-      color: white;
-        font-size: 25pt;
-
-        border: 1px solid white;
-      border-radius: 50px;
-    }
-
-    .content button:hover{
-      background-color: white;
-      color: black;
-      transition: all 0.2s;
-    }
-
-    .content .btn-not-sure{
-      position: absolute;
-      transition: all 0.2s;
-        top: 30rem;
-        left: 22.5rem;
-    }
-
-
-
-    body.swal2-shown > [aria-hidden="true"] {
-        transition: 0.1s filter;
-        filter: blur(10px);
-    }
-
-
-  </style>
+        .github-link:hover {
+            color: #e3e3e3;
+        }
+        
+        .github-icon {
+            font-size: 4em; 
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-<!--
+    <div class="container">
+        <a href="https://github.com/edwardch197/" target="_blank" class="github-link" aria-label="Kunjungi Profil GitHub">
+            <i class="fab fa-github github-icon"></i>
+        </a>
 
-  CSS Blossoming Flowers at Magical Night.
-  I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
-  Made with Pure CSS & ♥
--->
-
-<div class="night"></div>
-
-<section class="content">
-  <h1>Do you love me ? :(</h1>
-    <button class="btn-sure" id="sure" >Yess, I LOV U</button>
-    <button class="btn-not-sure" id="not-sure" >Not Sure (?)</button>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-  var btnSure = document.getElementById('sure');
-  var btnNotSure = document.getElementById('not-sure');
-  var incrementExperiment = 0;
-
-  const maxWidth = screen.width - btnNotSure.clientWidth;
-  const maxHeight = screen.height - btnNotSure.clientHeight;
-
-  function getRandomCoordinate(max) {
-      return Math.floor(Math.random() * max);
-  }
-
-  function randPosition(){
-    var randX = getRandomCoordinate(maxWidth);
-    var randY = getRandomCoordinate(maxHeight);
-
-    btnNotSure.style.left = `${randX}px`;
-    btnNotSure.style.top = `${randY}px`;
-
-    incrementExperiment++;
-
-      if ([5, 10, 15].includes(incrementExperiment) || incrementExperiment >= 20){
-          var title, message, gif;
-          switch (incrementExperiment){
-              case 5 :
-                  title = "Percobaan yang menarik";
-                  message = "Silahkan coba lagi :D";
-                  gif = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHQ1OXRkeTllZjVtaGZ5emdkaHlhZmZzMGw4Mzh1YWx3bnZtNnplbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif";
-                  break;
-              case 10 :
-                  title = "Hmm Okeyyy";
-                  message = "Sepertinya masih ada yang belum lelah :/";
-                  gif = "https://media1.giphy.com/media/GxN4ics7OlvsA/giphy.gif?cid=ecf05e47ovkxj3imxr8becvqr27ldz46l3nghqmkdlmbf3up&ep=v1_gifs_related&rid=giphy.gif&ct=g";
-                  break;
-              case 15 :
-                  title = "Lagiii ?!?!?";
-                  message = "OKEYYDEH, jika dirimu memaksa :)";
-                  gif = "https://media2.giphy.com/media/BBNYBoYa5VwtO/giphy.gif?cid=ecf05e47st80vi1smprxp0pv08vefq5jvtwgynff1dh7yh9l&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-                  break;
-              default:
-                  title = "Hhhmmmm";
-                  message = `Percobaan ke-${incrementExperiment}`;
-                  gif = "https://media0.giphy.com/media/R98cFjunTyfpS/giphy.gif?cid=ecf05e479iwh5dy66xhgjq5anhtzchkd5jzg2vta8ko1s3r2&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-                  break;
-          }
-          showAlert(title, message, gif);
-      }
-
-  }
-
-
-  function showAlert(title, message, gif){
-      Swal.fire({
-          title: title,
-          text: message,
-          imageUrl: gif,
-          imageWidth: 400,
-          imageHeight: 200,
-          showConfirmButton: false,
-
-          timer: 5000,
-          timerProgressBar: true
-      })
-  }
-
-  btnSure.addEventListener('click', function (){
-      Swal.fire({
-          title: 'YEAAYYY',
-          text: "Thank you for loving me <3",
-          confirmButtonText: 'CLICK ME!!',
-          imageUrl: 'https://media.tenor.com/F4QdS7YKKv4AAAAM/praying-cat.gif',
-      }).then((result) => {
-          if (result.isConfirmed) {
-              window.location.href = "/flowers.html";
-          }
-      })
-  })
-
-  btnNotSure.addEventListener('mouseover', function (){
-    randPosition();
-  })
-
-  btnNotSure.addEventListener('click', function (){
-    randPosition();
-  })
-
-
-
-
-
-</script>
+        <h1>Edward Christanto</h1> 
+        <p>Coding the web's future, one pixel and sensor at a time. Crafting digital symphonies where websites dance with IoT devices, orchestrating a connected world of endless possibilities.</p>
+    </div>
 
 </body>
 </html>
